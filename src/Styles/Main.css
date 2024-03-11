@@ -13,9 +13,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: hsl(221, 100%, 96%);
 }
 
 .App {
   display: flex;
   margin: 0 auto;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
 }/*# sourceMappingURL=Main.css.map */

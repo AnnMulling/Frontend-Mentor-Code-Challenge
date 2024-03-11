@@ -1,0 +1,68 @@
+$base-padding: 1.1rem;
+$base-width: 100%;
+
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+};
+
+@mixin colors($color, $text) {
+    background: $color;
+    color: $text;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 25px 0;
+    width: 23rem;
+    height: 32rem;
+
+    h2 {
+        margin: 1.5rem;
+    }
+
+    .summary-details {
+        width: $base-width;
+        padding: 0 3rem;
+
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.8rem;
+            border-radius: 0.5rem;
+            width: $base-width;
+            padding: $base-padding;
+            span {
+                @extend %flex-center
+            }
+            .summary-score {
+                color: hsl(224, 30%, 27%);
+                display: flex;
+                span {
+                    color: hsla(216, 3%, 61%, 0.953);
+                }
+
+            }
+
+        }
+
+        .reaction {
+            @include colors( hsla(0, 100%, 95%, 0.5),  hsl(0, 100%, 67%));
+        }
+        .memory {
+            @include colors(hsl(39, 100%, 95%, 0.5), hsl(39, 100%, 56%));
+        }
+        .verbal{
+            @include colors(hsl(166, 100%, 95%, 0.5), hsl(166, 100%, 37%));
+        }
+        .visual {
+            @include colors(hsl(241, 100%, 95%, 0.5), hsl(234, 85%, 45%));
+        }
+    }
+}
