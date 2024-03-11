@@ -1,0 +1,65 @@
+.summary .summary-details div span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 25px 0;
+  width: 23rem;
+  height: 32rem;
+}
+.summary h2 {
+  margin-left: 3rem;
+}
+.summary .summary-details {
+  width: 100%;
+  padding: 0 3rem;
+}
+.summary .summary-details div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 1.1rem;
+}
+.summary .summary-details div .summary-score {
+  color: hsl(224, 30%, 27%);
+  display: flex;
+}
+.summary .summary-details div .summary-score span {
+  color: hsla(216, 3%, 61%, 0.953);
+}
+.summary .summary-details .reaction {
+  background: hsla(0, 100%, 95%, 0.5);
+  color: hsl(0, 100%, 67%);
+}
+.summary .summary-details .memory {
+  background: hsla(39, 100%, 95%, 0.5);
+  color: hsl(39, 100%, 56%);
+}
+.summary .summary-details .verbal {
+  background: hsla(166, 100%, 95%, 0.5);
+  color: hsl(166, 100%, 37%);
+}
+.summary .summary-details .visual {
+  background: hsla(241, 100%, 95%, 0.5);
+  color: hsl(234, 85%, 45%);
+}
+.summary button {
+  background: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  padding: 0.8rem;
+  border-radius: 2rem;
+  border: none;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  width: 18rem;
+  cursor: pointer;
+}/*# sourceMappingURL=Summary.css.map */

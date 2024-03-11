@@ -1,3 +1,51 @@
-html {
+@import 'Components/Result.css';
+@import 'Components/Summary.css';
+
+// $tablet-width: 768px;
+$desktop-width: 1024px;
+$breakpoint-tablet: 768px;
+
+@mixin media($min-width, $max-width) {
+    @media (min-width: #{$min-width}) and (max-width: #{$max-width})  {
+      @content;
+    }
+
+}
+
+
+
+* {
     font-family: "Hanken Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(221, 100%, 96%);
+    @include media(400px , $breakpoint-tablet) {
+       width: 100vw;
+
+    }
+}
+
+
+.App {
+    display: flex;
+    margin: 0 auto;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 2rem;
+    @include media(400px , $breakpoint-tablet) {
+        display: flex;
+        flex-direction: column;
+    }
+    @include media($breakpoint-tablet , $desktop-width) {
+        display: flex;
+    }
 }
