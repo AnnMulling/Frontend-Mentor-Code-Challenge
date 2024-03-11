@@ -62,8 +62,4 @@
   font-size: 1.2rem;
   width: 18rem;
   cursor: pointer;
-}
-.summary button:hover {
-  transition: 0.5s;
-  background: linear-gradient(to bottom, hsl(241, 72%, 46%), rgba(72, 82, 219, 0.772));
 }/*# sourceMappingURL=Summary.css.map */

@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import '../../Styles/Components/Result.css'
-import data from './data.json'
 
-export const ResultSection = () => {
-    const [result, setResult] = useState(data[0]);
+
+export const ResultSection = ( { newData } ) => {
+   
     return (
         <div className="result">
             <h2>Your Result</h2>
             <div className="score">
-              <p>{result.score} </p>
+              <p>{newData.score}</p>
               <p id="score-max">of 100</p>
             </div>
             <div className="description">

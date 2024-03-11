@@ -1,7 +1,10 @@
 import '../../Styles/Components/Summary.css'
-import { ContinueButton } from '../ContinueButton/Continue'
+import { ContinueButton } from '../ContinueButton/Continue';
 
-export const SummarySection = () => {
+export const SummarySection = ({ rotateData }) => {
+
+
+
     return (
         <div className="summary">
             <h2>Summary</h2>
@@ -44,7 +47,7 @@ export const SummarySection = () => {
                 </div>
             </div>
 
-            <ContinueButton />
+            <ContinueButton rotateData={rotateData}/>
         </div>
     )
 }

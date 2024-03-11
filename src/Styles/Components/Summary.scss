@@ -76,13 +76,13 @@ $base-width: 100%;
        width: 18rem;
        cursor: pointer;
 
-       &:hover {
-           transition: 0.5s;
-           background: linear-gradient(
-                to bottom,
-                hsla(241, 72%, 46%, 1),
-                rgba(72, 82, 219, 0.772)
-                );
-       }
+    //    &:hover {
+    //        transition: 0.5s;
+    //        background: linear-gradient(
+    //             to bottom,
+    //             hsla(241, 72%, 46%, 1),
+    //             rgba(72, 82, 219, 0.772)
+    //             );
+    //    }
     }
 }
