@@ -1,3 +1,21 @@
-html {
+@import 'Components/Result.css';
+@import 'Components/Summary.css';
+* {
   font-family: "Hanken Grotesk", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  display: flex;
+  margin: 0 auto;
 }/*# sourceMappingURL=Main.css.map */
