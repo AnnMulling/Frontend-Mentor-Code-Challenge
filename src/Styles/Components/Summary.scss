@@ -17,13 +17,13 @@ $base-width: 100%;
 .summary {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
     padding: 25px 0;
     width: 23rem;
     height: 32rem;
 
     h2 {
-        margin: 1.5rem;
+        margin-left: 3rem;
     }
 
     .summary-details {
@@ -64,5 +64,25 @@ $base-width: 100%;
         .visual {
             @include colors(hsl(241, 100%, 95%, 0.5), hsl(234, 85%, 45%));
         }
+
+    }
+    button {
+       @include colors(hsl(224, 30%, 27%),hsl(0, 0%, 100%));
+       padding: 0.8rem;
+       border-radius: 2rem;
+       border: none;
+       margin: 0 auto;
+       font-size: 1.2rem;
+       width: 18rem;
+       cursor: pointer;
+
+       &:hover {
+           transition: 0.5s;
+           background: linear-gradient(
+                to bottom,
+                hsla(241, 72%, 46%, 1),
+                rgba(72, 82, 219, 0.772)
+                );
+       }
     }
 }

@@ -1,7 +1,7 @@
-import '../../Styles/Main.css'
+import '../../Styles/Components/Summary.css'
 
 export const ContinueButton = () => {
     return (
-        <button>Continue</button>
+        <button className="continue-btn">Continue</button>
     )
 };
