@@ -13,6 +13,11 @@
   width: 23rem;
   height: 32rem;
 }
+@media (max-width: 768px) {
+  .summary {
+    width: 80vw;
+  }
+}
 .summary h2 {
   margin-left: 3rem;
 }

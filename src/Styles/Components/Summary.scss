@@ -1,6 +1,6 @@
 $base-padding: 1.1rem;
 $base-width: 100%;
-
+$breakpoint-tablet: 768px;
 
 %flex-center {
     display: flex;
@@ -14,6 +14,12 @@ $base-width: 100%;
     color: $text;
 }
 
+@mixin media-min($max-width) {
+    @media (max-width: #{$max-width}) {
+      @content;
+    }
+}
+
 .summary {
     display: flex;
     flex-direction: column;
@@ -21,6 +27,9 @@ $base-width: 100%;
     padding: 25px 0;
     width: 23rem;
     height: 32rem;
+    @include media-min($breakpoint-tablet) {
+        width: 80vw;
+    }
 
     h2 {
         margin-left: 3rem;

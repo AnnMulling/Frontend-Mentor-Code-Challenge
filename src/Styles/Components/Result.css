@@ -13,6 +13,11 @@
   border-radius: 2rem;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .result {
+    width: 100vw;
+  }
+}
 .result h2 {
   color: hsl(241, 100%, 89%);
   font-weight: 700;
