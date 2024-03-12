@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Github repo](https://github.com/AnnMulling/Frontend-Mentor-Code-Challenge)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github repo](https://github.com/AnnMulling/Frontend-Mentor-Code-Challenge)
+- Live Site URL: [Live site]([https://your-live-site-url.com](https://main--fm-01.netlify.app/))
 
 ## My process
 
