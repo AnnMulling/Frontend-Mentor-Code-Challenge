@@ -3,7 +3,7 @@ import '../../Styles/Components/Result.css'
 
 
 export const ResultSection = ( { newData } ) => {
-   
+  
     return (
         <div className="result">
             <h2>Your Result</h2>
