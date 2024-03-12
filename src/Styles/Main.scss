@@ -9,7 +9,12 @@ $breakpoint-tablet: 768px;
     @media (min-width: #{$min-width}) and (max-width: #{$max-width})  {
       @content;
     }
+}
 
+@mixin media-min($min-width) {
+    @media (max-width: #{$max-width}) {
+      @content;
+    }
 }
 
 
@@ -28,20 +33,20 @@ body {
     justify-content: center;
     align-items: center;
     background-color: hsl(221, 100%, 96%);
-    @include media(400px , $breakpoint-tablet) {
-       width: 100vw;
-
+    @include media-min(453px) {
+        padding: 0;
     }
 }
 
 
 .App {
+    width: 46rem;
     display: flex;
     margin: 0 auto;
     background-color: hsl(0, 0%, 100%);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 2rem;
-    @include media(400px , $breakpoint-tablet) {
+    @include media-min(453px) {
         display: flex;
         flex-direction: column;
     }
