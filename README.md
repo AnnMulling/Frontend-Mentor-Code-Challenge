@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github repo](https://github.com/AnnMulling/Frontend-Mentor-Code-Challenge)
-- Live Site URL: [Live site]([https://your-live-site-url.com](https://main--fm-01.netlify.app/))
+- Live Site URL: [Live site](https://main--fm-01.netlify.app/)
 
 ## My process
 
